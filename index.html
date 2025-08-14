@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoElite - Concessionária Premium</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/additional-methods.min.js"></script>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">AutoElite</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-nav">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-a-concessionaria" class="nav-link"><i class="bi bi-house-door me-1"></i>Sobre nós</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#modelos" class="nav-link"><i class="bi bi-car-front me-1"></i>Modelos</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#estoque" class="nav-link"><i class="bi bi-clipboard-check me-1"></i>Estoque</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link"><i class="bi bi-chat-left-text me-1"></i>Fale conosco</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-a-concessionaria">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="https://www.comprecar.com.br/storage/news/featured/Joe0bXUi3jo_k37.jpg" alt="Showroom da concessionária">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="https://uploads.automaistv.com.br/2019/10/bmw_x1_xdrive25i_xline_706-750x500.jpg" alt="Carro de luxo">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="https://saxbr.com/wp-content/uploads/2025/02/concessionarias.webp" alt="Atendimento personalizado">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="https://images.homify.com/v1574726031/p/photo/image/3272351/01_5.jpg" class="d-block w-100 rounded" alt="Fachada da concessionária">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre a <span class="text-colored">AutoElite</span></h2>
+                            <p>A AutoElite é a mais conceituada concessionária de veículos premium do país, com mais de 20 anos de tradição no mercado automotivo. Nosso compromisso é oferecer a melhor experiência de compra de veículos, com atendimento personalizado e condições exclusivas.</p>
+                            <h3 class="section-title">Nossos <span class="text-colored">diferenciais</span></h3>
+                            <p>Oferecemos os melhores veículos nacionais e importados, com garantia estendida e serviços exclusivos para nossos clientes.</p>
+                            <ul>
+                                <li>Financiamento facilitado com as melhores taxas do mercado</li>
+                                <li>Test-drive agendado conforme sua disponibilidade</li>
+                                <li>Centro automotivo completo com tecnologia de ponta</li>
+                                <li>Assistência 24h para clientes preferenciais</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="modelos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Nossos <span class="text-colored">modelos</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="https://cdn.motor1.com/images/mgl/7ZL4go/s3/bmw-320i-msport-2021.webp" alt="Sedan premium" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-car-front-fill"></i>
+                            Sedans</h3>
+                        <p>Conforto, elegância e tecnologia em nossa linha de sedans premium, perfeitos para executivos e famílias que buscam o melhor em desempenho e sofisticação.</p>
+                    </div>            
+                    <div class="col-md-4">
+                        <img src="https://blog.keko.com.br/wp-content/uploads/2024/08/7-1080x675.jpg" alt="SUV" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-truck"></i>
+                            SUVs</h3>
+                        <p>Potência e versatilidade em nossos SUVs, ideais para quem não abre mão de conforto mesmo nos terrenos mais desafiadores. Tecnologia 4x4 de última geração.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://img.freepik.com/fotos-gratis/carro-3d-com-fundo-simples_23-2150796882.jpg?semt=ais_hybrid&w=740&q=80" alt="Carro esportivo" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-speedometer2"></i>
+                            Esportivos</h3>
+                        <p>Para os apaixonados por velocidade e design, nossa linha esportiva combina performance e sofisticação com motores de alta potência e aerodinâmica perfeita.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="estoque" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">Nosso <span class="text-colored">estoque</span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#nacionais" class="fw-bold text-start nav-link text-colored active">Nacionais</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#importados" class="fw-bold text-start nav-link text-colored">Importados</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#seminovos" class="fw-bold text-start nav-link text-colored">Seminovos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#luxo" class="fw-bold text-start nav-link text-colored">Luxo</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="nacionais">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://cdn.oantagonista.com/uploads/2025/03/Onix-2025-1024x576.jpg" alt="Hatch nacional">
+                                        <h5 class="text-colored fw-bold mt-2">Hatch Turbo 2024</h5>
+                                        <p>1.0 Turbo, automático, completo</p>
+                                        <p class="fw-bold">R$ 89.990</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUl2tYj0gWZ1lPXCc2aObhkHp2OlfekFfOsw&s" alt="Sedan nacional">
+                                        <h5 class="text-colored fw-bold mt-2">Sedan Executive</h5>
+                                        <p>2.0 Flex, automático, teto solar</p>
+                                        <p class="fw-bold">R$ 129.990</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://cdn.motor1.com/images/mgl/nOLjj/s3/toyota-rav4-adventure-2021.jpg" alt="SUV nacional">
+                                        <h5 class="text-colored fw-bold mt-2">SUV Adventure</h5>
+                                        <p>1.8 Turbo, 4x4, completo</p>
+                                        <p class="fw-bold">R$ 159.990</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://uploads.automaistv.com.br/2021/06/Fiat-Toro-Volcano_edited-750x451.jpg" alt="Pickup">
+                                        <h5 class="text-colored fw-bold mt-2">Pickup Diesel</h5>
+                                        <p>3.0 Turbo Diesel, 4x4</p>
+                                        <p class="fw-bold">R$ 249.990</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="importados">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://i0.wp.com/meugodrive.wpcomstaging.com/wp-content/uploads/2024/06/BYD-Qin-sedan-importado-hibrido-plug-in-chines-da-BYD.webp?resize=1024%2C525&ssl=1" alt="Sedan importado">
+                                        <h5 class="text-colored fw-bold mt-2">Sedan Importado</h5>
+                                        <p>2.0 Turbo, automático, luxo</p>
+                                        <p class="fw-bold">R$ 199.990</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://www.autoo.com.br/fotos/2022/9/1280_960/mustang2_15092022_72219_1280_960.jpg" alt="Coupé importado">
+                                        <h5 class="text-colored fw-bold mt-2">Coupé Esportivo</h5>
+                                        <p>3.0 V6, 320cv, automático</p>
+                                        <p class="fw-bold">R$ 299.990</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="seminovos">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://cdn.motor1.com/images/mgl/YAWkVW/s3/bmw-x1-sdrive-20i-msport-25-anos.jpg" alt="SUV seminovo">
+                                        <h5 class="text-colored fw-bold mt-2">SUV Premium 2022</h5>
+                                        <p>2.0 Turbo, 25.000km</p>
+                                        <p class="fw-bold">R$ 149.990</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQfdiBfkuxEunDMWffupcWtGAJPbKwjo89FQ&s" alt="Sedan seminovo">
+                                        <h5 class="text-colored fw-bold mt-2">Sedan Executive 2021</h5>
+                                        <p>1.8 Flex, 30.000km</p>
+                                        <p class="fw-bold">R$ 99.990</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="luxo">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://cdn.motor1.com/images/mgl/1ZKG39/s1/byd-yangwang-u9-1.jpg" alt="Carro de luxo">
+                                        <h5 class="text-colored fw-bold mt-2">Super Esportivo</h5>
+                                        <p>5.0 V8, 550cv, exclusivo</p>
+                                        <p class="fw-bold">R$ 1.299.990</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR07vfSoEE1wvJL6-EucqL3zwUgNMNUMWYrBw&s" alt="SUV de luxo">
+                                        <h5 class="text-colored fw-bold mt-2">SUV Premium</h5>
+                                        <p>4.0 V8, completo</p>
+                                        <p class="fw-bold">R$ 899.990</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form id="form-contato">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" name="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone</label>
+                                <input type="tel" id="telefone" name="telefone" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="interesse" class="form-label fw-bold text-colored">Interesse em</label>
+                                <select id="interesse" name="interesse" class="form-select">
+                                    <option value="novos">Veículos novos</option>
+                                    <option value="seminovos">Veículos seminovos</option>
+                                    <option value="ambos">Ambos</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea class="form-control" id="mensagem" name="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i> Redes sociais</h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i> Endereço</h3>
+                            <p>Av. Automotiva, 1234 - Bairro Premium<br>São Paulo - SP</p>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-clock-fill"></i> Horário de funcionamento</h3>
+                            <p>Segunda a Sexta: 09:00 - 18:00<br>Sábado: 09:00 - 14:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#telefone').mask('(00) 00000-0000');
+        
+        $('#form-contato').validate({
+            rules: {
+                nome: {
+                    required: true,
+                    minlength: 3
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                telefone: {
+                    required: true,
+                    minlength: 15
+                },
+                mensagem: {
+                    required: true,
+                    minlength: 10
+                }
+            },
+            messages: {
+                nome: {
+                    required: "Por favor, insira seu nome",
+                    minlength: "O nome deve ter pelo menos 3 caracteres"
+                },
+                email: {
+                    required: "Por favor, insira seu e-mail",
+                    email: "Por favor, insira um e-mail válido"
+                },
+                telefone: {
+                    required: "Por favor, insira seu telefone",
+                    minlength: "O telefone deve estar completo"
+                },
+                mensagem: {
+                    required: "Por favor, insira sua mensagem",
+                    minlength: "A mensagem deve ter pelo menos 10 caracteres"
+                }
+            },
+            errorElement: "div",
+            errorPlacement: function(error, element) {
+                error.addClass("invalid-feedback");
+                error.insertAfter(element);
+            },
+            highlight: function(element, errorClass, validClass) {
+                $(element).addClass("is-invalid").removeClass("is-valid");
+            },
+            unhighlight: function(element, errorClass, validClass) {
+                $(element).removeClass("is-invalid").addClass("is-valid");
+            },
+            submitHandler: function(form) {
+                alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+                form.reset();
+                $('.is-valid').removeClass('is-valid');
+            }
+        });
+    });
+    </script>
+</body>
+</html>
